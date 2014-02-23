@@ -53,6 +53,7 @@ body{
 }
 .c:hover{
 	color: red;
+	padding: 150px;
 }
 .start{
 	margin: 0 -30px;
