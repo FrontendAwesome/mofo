@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'b';
+    src: url('badmofo.svg#bad_moforegular') format('svg');
+}
+*{
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(37, 35, 35);
+}
+.wrapper{
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.c{
+	font-family: 'b';
+	color: rgb(63, 60, 60);
+	font-size: 8rem;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+	translate3d(0,0,0);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	margin: 0 2px;
+}
+.c:hover{
+	color: red;
+}
+.start{
+	margin: 0 -30px;
+	opacity: 0;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	transform: scale(0.8);
+}

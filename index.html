@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+	<title>BAD MOTHER FUCKA</title>
+	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="c start">b</div>
+	<div class="c start">a</div>
+	<div class="c start">d</div>
+	<div class="c start">m</div>
+	<div class="c start">o</div>
+	<div class="c start">t</div>
+	<div class="c start">h</div>
+	<div class="c start">e</div>
+	<div class="c start">r</div>
+	<div class="c start">f</div>
+	<div class="c start">u</div>
+	<div class="c start">c</div>
+	<div class="c start">k</div>
+	<div class="c start">a</div>	
+</div>
+	
+</body>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+	var animation = [
+		'bounce',
+		'flash',
+		'pulse',
+		'shake',
+		'swing',
+		'tada',
+		'wobble'];
+		
+	$('body').on('mouseover', '.c', function(event) {
+		$(this).addClass('animated ' + animation[Math.floor((Math.random()*animation.length))]);
+	});
+
+	$('.c').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+		function(){
+			$(this).removeClass().addClass('c');
+		});
+
+	$(function(){
+		$('.c').removeClass('start');
+	});
+</script>
+</html>
